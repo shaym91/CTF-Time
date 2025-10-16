@@ -1,0 +1,78 @@
+=====================================================
+HOW TO UPLOAD TO GITHUB (WEB INTERFACE)
+=====================================================
+
+Git commands aren't working, so use GitHub's web upload:
+
+STEP 1: Go to Your Repository
+------------------------------
+https://github.com/shaym91/CTF-Time
+
+
+STEP 2: Clean Up (if needed)
+-----------------------------
+If you see any files in the wrong place:
+- Click on the file
+- Click trash icon to delete
+- Commit deletion
+
+
+STEP 3: Upload Files
+---------------------
+1. Click "Add file" button
+2. Click "Upload files"
+3. Open Windows Explorer to:
+   D:\WSL\CTF\crypto\CTF-Platform\CTF-Deploy\
+4. Select ALL files and folders:
+   ✅ app.py
+   ✅ requirements.txt
+   ✅ .gitignore
+   ✅ README.md
+   ✅ templates (folder)
+   ✅ ctfd-import (folder)
+5. Drag them into GitHub upload area
+6. Add commit message: "Add CTF files"
+7. Click "Commit changes"
+
+
+STEP 4: Verify
+--------------
+After upload, you should see at ROOT of repo:
+- app.py
+- requirements.txt
+- templates/
+- ctfd-import/
+- README.md
+
+NOT in a subfolder!
+
+
+STEP 5: Deploy on Render
+-------------------------
+1. Go back to Render dashboard
+2. Click "Manual Deploy"
+3. Select "Clear build cache & deploy"
+4. Wait 5-10 minutes
+5. Your CTF will be live!
+
+
+=====================================================
+IMPORTANT: Files must be at ROOT level!
+=====================================================
+
+Your repo should look like:
+https://github.com/shaym91/CTF-Time/
+├── app.py
+├── requirements.txt
+├── templates/
+├── ctfd-import/
+└── README.md
+
+NOT like this:
+https://github.com/shaym91/CTF-Time/
+└── some-folder/
+    ├── app.py
+    └── requirements.txt
+
+=====================================================
+
