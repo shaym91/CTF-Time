@@ -1,0 +1,128 @@
+=====================================================
+READY TO UPLOAD TO GITHUB!
+=====================================================
+
+This folder contains ONLY 15 essential files.
+Everything needed for your CTF competition!
+
+=====================================================
+STEP 1: CREATE GITHUB REPOSITORY
+=====================================================
+
+1. Go to: https://github.com/new
+
+2. Repository name: ctf-competition
+
+3. Make it PUBLIC
+
+4. DON'T check "Add README" (we have one)
+
+5. Click "Create repository"
+
+=====================================================
+STEP 2: UPLOAD THIS FOLDER
+=====================================================
+
+METHOD A: Using Git Commands
+-----------------------------
+Open PowerShell in THIS folder (CTF-Deploy) and run:
+
+cd D:\WSL\CTF\crypto\CTF-Platform\CTF-Deploy
+
+git init
+git add .
+git commit -m "CTF Competition Platform"
+git remote add origin https://github.com/YOUR_USERNAME/ctf-competition.git
+git branch -M main
+git push -u origin main
+
+(Replace YOUR_USERNAME with your GitHub username)
+
+
+METHOD B: GitHub Web Upload (Easier!)
+--------------------------------------
+1. Go to your new repository on GitHub
+2. Click "uploading an existing file"
+3. Drag and drop ALL files from this folder
+4. Click "Commit changes"
+
+Done! ✅
+
+
+=====================================================
+STEP 3: DEPLOY ON RENDER OR CYCLIC
+=====================================================
+
+OPTION A: Render.com
+--------------------
+1. Go to: https://render.com
+2. Sign up (free)
+3. New + → Web Service
+4. Connect your GitHub repository
+5. Settings:
+   - Build: pip install -r requirements.txt
+   - Start: python app.py
+6. Click "Create Web Service"
+
+Your URL: https://ctf-competition.onrender.com
+
+
+OPTION B: Cyclic.sh (Recommended!)
+-----------------------------------
+1. Go to: https://cyclic.sh
+2. Sign in with GitHub
+3. Link your repository
+4. Click "Deploy"
+
+Your URL: (Cyclic will give you one)
+
+✅ Cyclic is better - no sleep, faster!
+
+
+=====================================================
+FILES IN THIS FOLDER (15 total)
+=====================================================
+
+✅ app.py                    (Main server)
+✅ requirements.txt          (Dependencies)
+✅ .gitignore               (Git settings)
+✅ README.md                (Documentation)
+✅ templates/               (7 HTML files)
+✅ ctfd-import/             (Challenge data)
+
+Total: ~15 files (well under 100 limit!)
+
+
+=====================================================
+AFTER DEPLOYMENT
+=====================================================
+
+1. Copy your deployment URL
+
+2. Test it:
+   - Go to URL
+   - Click "Register"
+   - Create test account
+   - Try a challenge
+
+3. Share with contestants:
+
+   🎯 CTF COMPETITION
+   🔗 URL: [YOUR_URL]
+   ⏰ Time: 1:30 PM - 1:30 AM BD Time
+   👥 Max 10 contestants
+   🏆 18 Challenges
+   
+   Register now!
+
+
+=====================================================
+DONE! YOUR CTF IS READY! 🚀
+=====================================================
+
+Everything is in this folder.
+Just upload to GitHub and deploy!
+
+Total cost: $0.00 (100% FREE)
+Time to deploy: 10 minutes
+
